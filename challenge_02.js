@@ -1,8 +1,8 @@
 /*********   CODE CHALLENGE 02 **********/
 
 /*
-Geben über eine Prompt-Anforderung einen Namen ein
-Geben über eine Prompt-Anforderung ein Alter ein
+Geben über eine Prompt-Anforderung einen Namen ein      
+Geben über eine Prompt-Anforderung ein Alter ein       //1 
 
 Geben Sie in Abhängigkeit vom angegebenen Alter 
 folgende Getränkeauswahl in die Konsole aus :
@@ -17,13 +17,38 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
-let Name;
-let Alter;
+let firstName;
+let age;
 
-Name = prompt("Bitte Name eingeben:");
-Alter = prompt("Bitte Alter eingeben:");
+firstName = prompt("Bitte Name eingeben:");
+age = prompt("Bitte Alter eingeben:");
 
-Alter = parseInt(Alter);
+age = parseInt(age);
 
-console.log(Name);
-console.log(Alter);
+// console.log(firstName);
+// console.log();                 //1
+
+
+switch (true)
+{
+    case (age >= 0 && age < 6):
+            console.log (firstName + " darf Milch trinken." );
+        break;
+    case (age >= 6 && age < 13):
+            console.log (firstName + " darf Saft trinken." );
+        break;
+    case (age >= 13 && age < 18):
+            console.log (firstName + " darf Cola trinken." );
+        break;
+    case (age >= 18 && age < 101):
+            console.log (firstName + " darf Wein trinken." );
+        break;
+    case (age >= 100 && age < 120):
+            console.log (firstName + " sollte nur noch Tee trinken." );
+        break;
+
+
+    default:
+        console.log("Bei der Angabe des Alters ist etwas schief gelaufen.");
+        break;
+}
