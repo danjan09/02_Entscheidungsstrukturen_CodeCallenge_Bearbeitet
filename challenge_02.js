@@ -21,9 +21,9 @@ let firstName;
 let age;
 
 firstName = prompt("Bitte Name eingeben:");
-age = prompt("Bitte Alter eingeben:");
+age = (prompt("Bitte Alter eingeben:"));
 
-age = parseInt(age);
+age = parseInt(age);            
 
 // console.log(firstName);
 // console.log();                 //1
@@ -47,8 +47,46 @@ switch (true)
             console.log (firstName + " sollte nur noch Tee trinken." );
         break;
 
-
     default:
         console.log("Bei der Angabe des Alters ist etwas schief gelaufen.");
         break;
 }
+
+// <-- eigene version
+
+
+
+
+// --> verkürzt
+
+
+// let firstName;
+// let age;
+
+// firstName = prompt("Bitte Name eingeben:");
+// age = parseInt(prompt("Bitte Alter eingeben:"));
+
+
+// switch (true)
+// {
+//     case (age <= 5):
+//             console.log (firstName + " darf Milch trinken." );
+//         break;
+//     case (age<= 13):
+//             console.log (firstName + " darf Saft trinken." );
+//         break;
+//     case (age <= 17):
+//             console.log (firstName + " darf Cola trinken." );
+//         break;
+//     case (age <= 100):
+//             console.log (firstName + " darf Wein trinken." );
+//         break;
+//     case (age >= 100 && age < 120):
+//             console.log (firstName + " sollte nur noch Tee trinken." );
+//         break;
+
+//     default:
+//         console.log("Bei der Angabe des Alters ist etwas schief gelaufen.");
+//         break;
+// }
+
